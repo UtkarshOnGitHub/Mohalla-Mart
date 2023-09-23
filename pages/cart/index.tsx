@@ -22,7 +22,7 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 // export const getServerSideProps = async () => {
-//   let resp:any = axios.get('http://localhost:3000/api/carts').then((res) => console.log(res, 'GET CARTSSSS'))
+//   let resp:any = axios.get('https://mohalla-mart-utkarshongithub.vercel.app/api/carts').then((res) => console.log(res, 'GET CARTSSSS'))
 
 //   return {
 //     props: {props: resp.data}
@@ -116,7 +116,7 @@ function Cart({props}:any) {
         // })
 
 
-        axios.post("http://localhost:3000/api/orders", {"message": "success"}).then((res)=> {
+        axios.post("https://mohalla-mart-utkarshongithub.vercel.app/api/orders", {"message": "success"}).then((res)=> {
           console.log(res, 'orders post')
         }).catch((e)=> console.log(e.message));
         router.push("/orders")

@@ -38,7 +38,7 @@ export default function VerifyEmail() {
             duration: 1000,
             isClosable: true,
         })
-        axios.post("http://localhost:3000/api/users/verify", {email, otp}).then((res)=>{
+        axios.post("https://mohalla-mart-utkarshongithub.vercel.app/api/users/verify", {email, otp}).then((res)=>{
             toast({
                 title: 'Account verified successfully.',
                 description: "Happy Shopping.",

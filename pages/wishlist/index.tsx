@@ -80,7 +80,7 @@ export default index
 
 
 export async function getServerSideProps({req}:any) {
-    let resp:any = await axios.get("http://localhost:3000/api/products")
+    let resp:any = await axios.get("https://mohalla-mart-utkarshongithub.vercel.app/api/products")
 
     if(!req.cookies.mohallaMartJwt){
         return {

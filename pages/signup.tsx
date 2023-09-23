@@ -38,7 +38,7 @@ export default function signup(){
             isClosable: true,
         })
         
-        axios.post('http://localhost:3000/api/users/signup', creds ).then((res:any) => {
+        axios.post('https://mohalla-mart-utkarshongithub.vercel.app/api/users/signup', creds ).then((res:any) => {
             toast({
                 title: 'Account created.',
                 description: "Kindly verify your account.",
