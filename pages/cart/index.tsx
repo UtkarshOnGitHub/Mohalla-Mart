@@ -128,7 +128,7 @@ function Cart({props}:any) {
       },
     };
 
-    const paymentObject = new window.Razorpay(options);
+    const paymentObject ={open:()=>{return}};
     paymentObject.open();
   };
   const initializeRazorpay = () => {
